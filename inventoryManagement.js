@@ -1,6 +1,23 @@
 // Write your code here
 
+products = ["Laptop" , "Phone" , "Headphones" , "Monitor"]
 
+function logFirstProduct() {
+   console.log(products[0])
+}
+
+function addProduct (name) {
+  products.push(name)
+}
+
+function updateProductName (position , newItem) {
+  products[position] = newItem
+    
+}
+
+function removeLastProduct() {
+  products.pop()
+}
 
 // Export the necessary parts for testing
 module.exports = {
